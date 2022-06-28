@@ -9,49 +9,38 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-#main {
-
-}
+#main {}
 
 #header {
     height: 46px;
     background-color: black;
 }
 
-#nav {
-
-}
+#nav {}
 
 #nav li {
     display: inline-block;
 }
 
-#nav li a{
-    color: white;
-    text-decoration: none;
+#nav li a {
     line-height: 46px;
     padding: 0 24px;
+    color: white;
+    text-decoration: none;
     display: inline-block;
 }
 
 #nav li:hover a {
-    cursor: pointer;
     color: black;
     background-color: #ccc;
 }
 
-#nav .subnav{
+#nav .subnav {
     display: none;
 }
 
-#slider {
+#slider {}
 
-}
+#content {}
 
-#content {
-
-}
-
-#footer {
-
-}
+#footer {}
