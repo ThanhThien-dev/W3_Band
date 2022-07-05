@@ -170,8 +170,7 @@ html {
     line-height: 1.5;
 }
 
-.band-list {
-}
+.band-list {}
 
 #content .band-item {
     margin-top: 48px;
@@ -227,5 +226,50 @@ html {
     margin-top: -3px;
 }
 
+.place-list {
+    margin: 32px -8px 45px;
+}
+
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    font-size: 15px;
+}
+
+.place-img {
+    display: block;
+    width: 100%;
+}
+
+.place-body {
+    background-color: white;
+    padding: 15px 16px;
+}
+
+.place-name {}
+
+.place-time {
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.place-text {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: black;
+}
 
 #footer {}
