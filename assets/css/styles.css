@@ -9,6 +9,14 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
+.white-text {
+    color: white !important;
+}
+
 #main {}
 
 #header {
@@ -160,6 +168,63 @@ html {
     font-size: 15px;
     text-align: justify;
     line-height: 1.5;
+}
+
+.band-list {
+}
+
+#content .band-item {
+    margin-top: 48px;
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .band-name {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+#content .band-img {
+    width: 154px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: black;
+}
+
+.tour-section .ticket-list {
+    margin-top: 40px;
+    background-color: white;
+    font-size: 15px;
+    list-style: none;
+}
+
+.tour-section .ticket-list li {
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.tour-section .sold-out {
+    background-color: #f44336;
+    color: white;
+    padding: 3px 5px;
+    margin-left: 15px;
+}
+
+.tour-section .sold-quantity {
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    margin-right: 16px;
+    margin-top: -3px;
 }
 
 
