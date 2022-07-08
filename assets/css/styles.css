@@ -290,6 +290,7 @@ html {
     position: relative;
     background-color: white;
     width: 900px;
+    max-width: calc(100% - 32px);
     min-height: 200px;
 }
 
@@ -344,6 +345,12 @@ html {
     color: white;
     font-size: 18px;
     border: none;
+}
+
+.body-payBtn:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #ccc;
 }
 
 .footer-help {
