@@ -259,15 +259,17 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
+.buy-btn {
     background-color: black;
     color: white;
     text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
+    border: none;
 }
 
-.place-buy-btn:hover {
+.buy-btn:hover {
+    cursor: pointer;
     background-color: #ccc;
     color: black;
 }
@@ -276,7 +278,6 @@ html {
 
 .modal {
     position: fixed;
-    display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
@@ -284,6 +285,11 @@ html {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.modal.open {
+    display: flex;
 }
 
 .modal-container {
