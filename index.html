@@ -175,6 +175,25 @@
         </div>
     </div>
 
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-btn')
+        const modal = document.querySelector('.modal')
+        const closeBtn = document.querySelector('.modal-closeBtn')
+
+        function showBtnTicket() {
+            modal.classList.add('open')
+        }
+
+        for(const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBtnTicket)
+        }
+
+        closeBtn.addEventListener('click', hideBtnTicket)
+
+        function hideBtnTicket() {
+            modal.classList.remove('open')
+        }
+    </script>
 </body>
 
 </html>
