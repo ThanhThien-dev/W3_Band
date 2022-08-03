@@ -242,6 +242,10 @@ html {
     width: 100%;
 }
 
+.place-img:hover {
+    opacity: .5;
+}
+
 .place-body {
     background-color: white;
     padding: 15px 16px;
@@ -298,6 +302,7 @@ html {
     width: 900px;
     max-width: calc(100% - 32px);
     min-height: 200px;
+    animation: modalFadeIn ease .5s;
 }
 
 .modal-closeBtn {
@@ -363,4 +368,15 @@ html {
     float: right;
     padding: 15px;
     margin-bottom: 15px;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
