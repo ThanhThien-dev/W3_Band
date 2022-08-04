@@ -9,12 +9,54 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Dùng chung */
 .clear {
     clear: both;
 }
 
 .white-text {
     color: white !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-2 {
+    width: calc(100% / 2);
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 #main {}
@@ -174,9 +216,6 @@ html {
 
 #content .band-item {
     margin-top: 48px;
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
 }
 
 #content .band-name {
@@ -227,14 +266,8 @@ html {
 }
 
 .place-list {
-    margin: 32px -8px 45px;
-}
-
-.place-item {
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
-    font-size: 15px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-img {
@@ -276,6 +309,39 @@ html {
     cursor: pointer;
     background-color: #ccc;
     color: black;
+}
+
+.contact-content {
+    margin: 35px 0;
+}
+
+.contact-left p i {
+    display: inline-block;
+    width: 30px;
+}
+
+.contact-left {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-right {
+    font-size: 15px;
+}
+
+.form-control {
+    height: 40px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit-btn {
+    background: #000;
+    color: white;
+    font-size: 15px;
+    padding: 9px 13px;
+    float: right;
 }
 
 #footer {}
