@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -16,6 +17,23 @@ html {
 
 .white-text {
     color: white !important;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
 }
 
 .row {
@@ -56,7 +74,11 @@ html {
 }
 
 .text-center {
-    text-align: center;
+    text-align: center !important;
+}
+
+.pull-right {
+    float: right !important;
 }
 
 #main {}
@@ -98,7 +120,7 @@ html {
     line-height: 46px;
     padding: 0 24px;
     text-decoration: none;
-    display: inline-block;
+    display: block;
 }
 
 #nav>li:hover>a {
@@ -136,6 +158,14 @@ html {
 /* End: Nav */
 
 /* Begin: Search Button */
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -146,6 +176,15 @@ html {
     background-color: #f44336;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: black;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 16px;
@@ -177,6 +216,7 @@ html {
 
 #slider .text-decripstion {
     padding: 20px 0;
+    text-shadow: 0 0 1px black;
 }
 
 
@@ -184,7 +224,8 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    max-width: 100%;
+    padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -215,7 +256,7 @@ html {
 .band-list {}
 
 #content .band-item {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .band-name {
@@ -266,7 +307,7 @@ html {
 }
 
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 }
 
@@ -296,21 +337,6 @@ html {
     line-height: 1.4;
 }
 
-.buy-btn {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    border: none;
-}
-
-.buy-btn:hover {
-    cursor: pointer;
-    background-color: #ccc;
-    color: black;
-}
-
 .contact-content {
     margin: 35px 0;
 }
@@ -331,7 +357,7 @@ html {
 
 .form-control {
     height: 40px;
-    padding: 4px;
+    padding: 4px 8px;
     border: 1px solid #ccc;
     width: 100%;
 }
@@ -342,9 +368,48 @@ html {
     font-size: 15px;
     padding: 9px 13px;
     float: right;
+    border: none;
 }
 
-#footer {}
+.form-submit-btn:hover {
+    cursor: pointer;
+    background: #ccc;
+    color: black;
+}
+
+/* Map section */
+.map-section img {
+    width: 100%;
+}
+
+/* FOOOTER */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list a{
+    font-size: 30px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 8px;
+}
+
+#footer .social-list a:hover {
+    cursor: unset;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 20px;
+}
+
+#footer .copyright a{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
 
 .modal {
     position: fixed;
@@ -445,4 +510,12 @@ html {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@media () {
+    /*
+    PC: >= 1024px
+    Tablet: >= 740px & < 1024px
+    Mobile: < 740px
+    */
 }

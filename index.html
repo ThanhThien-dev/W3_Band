@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 
@@ -15,19 +16,19 @@
         <div id="header">
             <!-- Begin: Nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-icon-arrowdown ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -35,6 +36,10 @@
             <!-- Begin: Search Button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- End: Search Button -->
         </div>
@@ -48,7 +53,7 @@
 
         <div id="content">
             <!-- ABOUT SECTION -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -61,15 +66,15 @@
                     commodo consequat.</p>
 
                 <div class="band-list">
-                    <div class="col col-3 text-center band-item">
+                    <div class="col col-3 s-col-full mt-16 text-center band-item">
                         <p class="band-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="Member" class="band-img">
                     </div>
-                    <div class="col col-3 text-center band-item">
+                    <div class="col col-3 s-col-full mt-16 text-center band-item">
                         <p class="band-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="Member" class="band-img">
                     </div>
-                    <div class="col col-3 text-center band-item">
+                    <div class="col col-3 s-col-full mt-16 text-center band-item">
                         <p class="band-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="Member" class="band-img">
                     </div>
@@ -78,7 +83,7 @@
             </div>
 
             <!-- TOUR SECTION -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading white-text">TOUR DATES</h2>
                     <p class="section-sub-heading white-text">Remember to book your tickets!</p>
@@ -90,33 +95,33 @@
                     </ul>
 
                     <div class="row place-list">
-                        <div class="col col-3">
+                        <div class="col col-3 s-col-full mt-16">
                             <img src="./assets/img/place/place1.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h4 class="place-name">New York</h4>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="" class="buy-btn js-buy-btn">Buy Tickets</button>
+                                <button href="" class="btn js-buy-btn s-full-width">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="col col-3">
+                        <div class="col col-3 s-col-full mt-16">
                             <img src="./assets/img/place/place2.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h4 class="place-name">Paris</h4>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="" class="buy-btn js-buy-btn">Buy Tickets</button>
+                                <button href="" class="btn js-buy-btn s-full-width">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="col col-3">
+                        <div class="col col-3 s-col-full mt-16">
                             <img src="./assets/img/place/place3.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                                 <h4 class="place-name">San Francisco</h4>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="" class="buy-btn js-buy-btn">Buy Tickets</button>
+                                <button href="" class="btn js-buy-btn s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -125,18 +130,18 @@
                 </div>
             </div>
 
-            <!-- CONTACT SECTION -->
-            <div class="content-section">
+            <!-- BEGIN: CONTACT SECTION -->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                 <div class="row contact-content">
-                    <div class="col col-2 contact-left">
+                    <div class="col col-2 s-col-full contact-left">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
                         <p><i class="ti-headphone-alt"></i>Phone: +00 151515</p>
                         <p><i class="ti-email"></i>Email: mail@mail.com</p>
                     </div>
-                    <div class="col col-2 contact-right">
+                    <div class="col col-2 s-col-full contact-right">
                         <form action="">
                             <div class="row">
                                 <div class="col col-2">
@@ -148,18 +153,34 @@
                             </div>
                             <div class="row mt-8">
                                 <div class="col col-full">
-                                    <input required type="text" placeholder="Message" name="" id="" class="form-control">
+                                    <input required type="text" placeholder="Message" name="" id=""
+                                        class="form-control">
                                 </div>
                             </div>
-                            <input class="form-submit-btn mt-16" type="submit" value="SEND">
+                            <input class="btn pull-right mt-16 s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
             </div>
+            <!-- END: CONTACT SECTION -->
+
+            <div class="map-section">
+                <img src="./assets/img/map/map.jpg" alt="Map">
+            </div>
         </div>
 
         <div id="footer">
-
+            <div class="social-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-github"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>Powered by <a href="">w3.css</a></p>
+            </div>
         </div>
     </div>
 
@@ -226,6 +247,39 @@
         modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         })
+    </script>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        //Đóng mở menu moblie
+        mobileMenu.onclick = function (isClosed) {
+            isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+
+        //Tự động đóng khi chọn Item menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event) {
+                var isParrentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParrentMenu) {
+                    event.preventDefault();
+                }
+                else {
+                    header.style.height = null;
+                }
+            }
+        }
     </script>
 </body>
 
